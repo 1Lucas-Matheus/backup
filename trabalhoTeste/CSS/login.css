@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+@keyframes bordarRGB {
+  0% {
+    border-color: rgb(255, 0, 0);
+  }
+
+  25% {
+    border-color: rgb(0, 255, 0);
+  }
+
+  50% {
+    border-color: rgb(0, 0, 255);
+  }
+
+  75% {
+    border-color: rgb(255, 255, 0);
+  }
+
+  100% {
+    border-color: rgb(255, 0, 255);
+  }
+}
+
+
+
+
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: url(../Images/fundo.jpg) no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+#centralizar {
+  background-color: #fffffb;
+  box-shadow: 7px 7px 15px rgb(000 000 000 / 60%);
+
+  background: transparent;
+  backdrop-filter: blur(15px);
+
+  border: 2px solid;
+  border-radius: 24px;
+  animation: bordarRGB 5s infinite alternate;
+}
+
+
+
+
+
+
+
+#logo {
+  width: 100%;
+  width: 250px;
+}
+
+
+
+
+
+
+
+#link {
+  color: dodgerblue;
+  outline: none;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+#link:hover {
+  color: red;
+  transition: color 0.2s;
+}
+
+
+
+
+
+
+#inputNome {
+  outline: 0;
+  border: 0;
+
+  background-color: transparent;
+  border-bottom: 2px solid white;
+}
+
+#inputEmail {
+  outline: 0;
+  border: 0;
+
+  background-color: transparent;
+  border-bottom: 2px solid white;
+}
+
+#inputSenha {
+  outline: 0;
+  border: 0;
+
+  background-color: transparent;
+  border-bottom: 2px solid white;
+}
+
+#inputNome:focus {
+  outline: 0;
+  border: 0;
+
+  box-shadow: none !important;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+}
+
+#inputEmail:focus {
+  outline: 0;
+  border: 0;
+
+  box-shadow: none !important;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+}
+
+#inputSenha:focus {
+  outline: 0;
+  border: 0;
+
+  box-shadow: none !important;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+}
